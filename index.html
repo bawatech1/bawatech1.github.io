@@ -343,6 +343,22 @@ section{position:relative}
 }
 .hero h1{font-size:clamp(3rem,8vw,8rem)}
 @media (max-width:860px){.hero h1{font-size:clamp(2.8rem,13vw,5.5rem)}}
+
+.code-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(2rem,6vw,5rem);align-items:center}
+.code-copy p{margin-top:1.25rem;max-width:26rem}
+.editor{background:#0d1511;border:1px solid rgba(233,232,223,.18);box-shadow:0 30px 60px -30px rgba(0,0,0,.7);min-width:0}
+.ed-tabs{display:flex;overflow-x:auto;border-bottom:1px solid rgba(233,232,223,.14);background:#101a14}
+.ed-tab{background:none;border:0;border-right:1px solid rgba(233,232,223,.1);color:#b4bcb2;font:inherit;font-size:.88rem;padding:.8rem 1.2rem;cursor:pointer;white-space:nowrap}
+.ed-tab[aria-selected="true"]{background:#0d1511;color:#e9e8df;box-shadow:inset 0 2px 0 #c2a15a}
+.ed-panel{display:none;margin:0;padding:1.4rem 0;overflow-x:auto;font-family:ui-monospace,"Cascadia Code",Consolas,Menlo,monospace;font-size:.9rem;line-height:1.75;color:#e9e8df;min-height:19rem;counter-reset:ln}
+.ed-panel.active{display:block}
+.cl{display:block;padding:0 1.4rem 0 3.4rem;position:relative;white-space:pre;counter-increment:ln;transition:opacity .25s}
+.cl::before{content:counter(ln);position:absolute;left:1rem;width:1.6rem;text-align:right;color:#5d6b62}
+.js .cl{opacity:0}
+.js .cl.show{opacity:1}
+.t-tag{color:#9fc27a}.t-attr{color:#c2a15a}.t-str{color:#d3a9b8}.t-key{color:#c2a15a}.t-com{color:#6f7f75}.t-fn{color:#9fc27a}
+.ed-out{border-top:1px solid rgba(233,232,223,.14);padding:.9rem 1.4rem;font-family:ui-monospace,Consolas,Menlo,monospace;font-size:.88rem;color:#b4bcb2;min-height:3.2rem}
+@media (max-width:860px){.code-grid{grid-template-columns:1fr}}
 </style>
 </head>
 
@@ -398,6 +414,25 @@ section{position:relative}
     </div>
   </section>
 
+  <section class="sec dark" id="code" aria-labelledby="code-title">
+  <div class="wrap code-grid">
+    <div class="code-copy">
+      <h2 class="h2" id="code-title">Built with code</h2>
+      <p class="muted">HTML gives a page its structure, CSS gives it its look, and JavaScript makes it respond. These are the tools I work with every day.</p>
+    </div>
+    <div class="editor" id="editor">
+      <div class="ed-tabs" role="tablist" aria-label="Code files">
+        <button class="ed-tab" role="tab" type="button" aria-selected="true" aria-controls="p-html" data-out="Preview: a page headed Bawaya Kenneth, with the project Tzar Flix.">index.html</button>
+        <button class="ed-tab" role="tab" type="button" aria-selected="false" aria-controls="p-css" data-out="Result: the heading is set in a brass colour taken from my photographs.">style.css</button>
+        <button class="ed-tab" role="tab" type="button" aria-selected="false" aria-controls="p-js" data-out="Output: Bawaya Kenneth (Kenny) builds websites in Uganda.">app.js</button>
+      </div>
+      <pre class="ed-panel active" id="p-html" role="tabpanel"><code><span class="cl"><span class="t-tag">&lt;header</span> <span class="t-attr">class</span>=<span class="t-str">"intro"</span><span class="t-tag">&gt;</span></span><span class="cl">  <span class="t-tag">&lt;h1&gt;</span>Bawaya Kenneth<span class="t-tag">&lt;/h1&gt;</span></span><span class="cl">  <span class="t-tag">&lt;p&gt;</span>Web Developer | Software &amp; Technology Specialist<span class="t-tag">&lt;/p&gt;</span></span><span class="cl"><span class="t-tag">&lt;/header&gt;</span></span><span class="cl"> </span><span class="cl"><span class="t-tag">&lt;section</span> <span class="t-attr">id</span>=<span class="t-str">"projects"</span><span class="t-tag">&gt;</span></span><span class="cl">  <span class="t-tag">&lt;h2&gt;</span>Tzar Flix<span class="t-tag">&lt;/h2&gt;</span></span><span class="cl">  <span class="t-tag">&lt;p&gt;</span>Status: In development<span class="t-tag">&lt;/p&gt;</span></span><span class="cl"><span class="t-tag">&lt;/section&gt;</span></span></code></pre>
+      <pre class="ed-panel" id="p-css" role="tabpanel"><code><span class="cl"><span class="t-com">/* Colours taken from my own photographs */</span></span><span class="cl"><span class="t-tag">:root</span> {</span><span class="cl">  <span class="t-attr">--ink</span>: <span class="t-str">#14201a</span>;</span><span class="cl">  <span class="t-attr">--brass</span>: <span class="t-str">#c2a15a</span>;</span><span class="cl">}</span><span class="cl"> </span><span class="cl"><span class="t-tag">.intro h1</span> {</span><span class="cl">  <span class="t-attr">font-family</span>: Georgia, serif;</span><span class="cl">  <span class="t-attr">color</span>: <span class="t-fn">var</span>(--brass);</span><span class="cl">}</span></code></pre>
+      <pre class="ed-panel" id="p-js" role="tabpanel"><code><span class="cl"><span class="t-key">const</span> developer = {</span><span class="cl">  name: <span class="t-str">"Bawaya Kenneth"</span>,</span><span class="cl">  alias: <span class="t-str">"Kenny"</span>,</span><span class="cl">  country: <span class="t-str">"Uganda"</span>,</span><span class="cl">  building: <span class="t-str">"Tzar Flix"</span></span><span class="cl">};</span><span class="cl"> </span><span class="cl"><span class="t-key">function</span> <span class="t-fn">introduce</span>(person) {</span><span class="cl">  <span class="t-key">return</span> <span class="t-str">`${person.name} (${person.alias}) builds websites in ${person.country}.`</span>;</span><span class="cl">}</span><span class="cl"> </span><span class="cl"><span class="t-fn">console</span>.log(<span class="t-fn">introduce</span>(developer));</span></code></pre>
+      <div class="ed-out" id="edOut"></div>
+    </div>
+  </div>
+</section>
   <!-- ABOUT -->
   <section class="sec light" id="about" aria-labelledby="about-title">
     <div class="wrap about-grid">
@@ -601,7 +636,7 @@ section{position:relative}
   <section class="sec moss contact" id="contact" aria-labelledby="contact-title">
     <div class="wrap contact-grid">
       <div>
-        <h2 class="h2" id="contact-title">Contact Kenny</h2>
+        <h2 class="h2" id="contact-title">Contact Me</h2>
         <p class="lede">Need a website built or fixed, software installed, or a computer or phone sorted out? Send me a message and tell me what you need.</p>
       </div>
       <div>
@@ -861,6 +896,65 @@ section{position:relative}
     if (Math.abs(dx) > 50) { show(current + (dx < 0 ? 1 : -1), true); }
     startX = null;
   }, { passive: true });
+})();
+</script>
+<script>
+(function () {
+  "use strict";
+  var ed = document.getElementById("editor");
+  if (!ed) { return; }
+  var tabs = Array.prototype.slice.call(ed.querySelectorAll(".ed-tab"));
+  var panels = Array.prototype.slice.call(ed.querySelectorAll(".ed-panel"));
+  var out = document.getElementById("edOut");
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var timer = null;
+  var current = 0;
+
+  function play(i) {
+    clearInterval(timer);
+    var lines = Array.prototype.slice.call(panels[i].querySelectorAll(".cl"));
+    var text = tabs[i].getAttribute("data-out") || "";
+    out.textContent = "";
+    lines.forEach(function (l) { l.classList.remove("show"); });
+    if (reduce) {
+      lines.forEach(function (l) { l.classList.add("show"); });
+      out.textContent = text;
+      return;
+    }
+    var n = 0;
+    timer = setInterval(function () {
+      if (n < lines.length) { lines[n].classList.add("show"); n++; }
+      else { clearInterval(timer); out.textContent = text; }
+    }, 110);
+  }
+
+  function select(i, focus) {
+    current = i;
+    tabs.forEach(function (t, k) {
+      t.setAttribute("aria-selected", k === i ? "true" : "false");
+      t.setAttribute("tabindex", k === i ? "0" : "-1");
+      panels[k].classList.toggle("active", k === i);
+    });
+    if (focus) { tabs[i].focus(); }
+    play(i);
+  }
+
+  tabs.forEach(function (t, i) {
+    t.addEventListener("click", function () { select(i, false); });
+    t.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowRight") { e.preventDefault(); select((i + 1) % tabs.length, true); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); select((i + tabs.length - 1) % tabs.length, true); }
+    });
+  });
+
+  if ("IntersectionObserver" in window) {
+    var started = false;
+    new IntersectionObserver(function (entries, obs) {
+      if (entries[0].isIntersecting && !started) { started = true; select(0, false); obs.disconnect(); }
+    }, { threshold: 0.35 }).observe(ed);
+  } else {
+    select(0, false);
+  }
 })();
 </script>
 </body>
