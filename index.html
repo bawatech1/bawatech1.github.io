@@ -359,6 +359,10 @@ section{position:relative}
 .t-tag{color:#9fc27a}.t-attr{color:#c2a15a}.t-str{color:#d3a9b8}.t-key{color:#c2a15a}.t-com{color:#6f7f75}.t-fn{color:#9fc27a}
 .ed-out{border-top:1px solid rgba(233,232,223,.14);padding:.9rem 1.4rem;font-family:ui-monospace,Consolas,Menlo,monospace;font-size:.88rem;color:#b4bcb2;min-height:3.2rem}
 @media (max-width:860px){.code-grid{grid-template-columns:1fr}}
+
+.project-preview{grid-column:1 / -1;margin-top:clamp(1.5rem,4vw,3rem)}
+.project-preview img{width:100%;height:auto;border:1px solid rgba(233,232,223,.2)}
+.project-preview figcaption{margin-top:.8rem;font-size:.92rem;color:var(--muted-light)}
 </style>
 </head>
 
@@ -437,7 +441,7 @@ section{position:relative}
   <section class="sec light" id="about" aria-labelledby="about-title">
     <div class="wrap about-grid">
       <figure class="about-photo">
-        <div class="mat"><img src="assets/images/kenny-workspace.jpg" width="800" height="1422" loading="lazy"
+        <div class="mat"><img src="assets/images/kenny-workspace.webp" width="800" height="1422" loading="lazy"
              alt="Bawaya Kenneth in a black shirt seated on a leather sofa, with a laptop showing a spreadsheet open beside him."></div>
         <figcaption class="muted"></figcaption>
       </figure>
@@ -605,6 +609,10 @@ section{position:relative}
           <p class="lede">A digital entertainment platform taking shape as a movie-streaming website.</p>
           <p>Muno Streams is an active development project and an important part of my learning journey. I am using it to put web-development concepts into practice, work through the challenges of building a larger digital product and steadily improve my technical skills. The platform is still under development and is not yet a finished public product.</p>
         </div>
+        <figure class="project-preview">
+  <img src="assets/images/muno-streams-preview.webp" width="1686" height="1170" loading="lazy" alt="Preview of the Muno Streams home screen, showing the navigation bar, genre filters, a search box and a featured movie banner.">
+  <figcaption>Preview of the Muno Streams home screen. The platform is still in development.</figcaption>
+</figure>
       </article>
       <p class="more-note">More projects will be added here as they are completed.</p>
     </div>
@@ -620,13 +628,13 @@ section{position:relative}
       <!-- TO ADD A PHOTO: copy one <button class="g-item"> block, change data-full, the img src, alt text and caption. -->
       <div class="gallery-grid" id="galleryGrid">
         <button class="g-item" type="button" data-full="assets/images/kenny-portrait.jpg" data-caption="Portrait in the evening light">
-          <span class="ph"><img src="assets/images/kenny-portrait-640.jpg" width="640" height="962" loading="lazy" alt="Bawaya Kenneth with arms crossed in front of green foliage and purple flowers."></span><span class="cap">Portrait in the evening light</span>
+          <span class="ph"><img src="assets/images/kenny-portrait-640.webp" width="640" height="962" loading="lazy" alt="Bawaya Kenneth with arms crossed in front of green foliage and purple flowers."></span><span class="cap">Portrait in the evening light</span>
         </button>
         <button class="g-item" type="button" data-full="assets/images/kenny-staircase.jpg" data-caption="On the staircase">
-          <span class="ph"><img src="assets/images/kenny-staircase.jpg" width="1041" height="1510" loading="lazy" alt="Bawaya Kenneth walking down a terrazzo staircase beside a green wall, wearing a black cap, black T-shirt and white slides."></span><span class="cap">On the staircase</span>
+          <span class="ph"><img src="assets/images/kenny-staircase.webp" width="1041" height="1510" loading="lazy" alt="Bawaya Kenneth walking down a terrazzo staircase beside a green wall, wearing a black cap, black T-shirt and white slides."></span><span class="cap">On the staircase</span>
         </button>
         <button class="g-item" type="button" data-full="assets/images/kenny-workspace.jpg" data-caption="Working with spreadsheets">
-          <span class="ph"><img src="assets/images/kenny-workspace.jpg" width="800" height="1422" loading="lazy" alt="Bawaya Kenneth seated on a leather sofa with an open laptop showing a spreadsheet."></span><span class="cap">Working with spreadsheets</span>
+          <span class="ph"><img src="assets/images/kenny-workspace.webp" width="800" height="1422" loading="lazy" alt="Bawaya Kenneth seated on a leather sofa with an open laptop showing a spreadsheet."></span><span class="cap">Working with spreadsheets</span>
         </button>
       </div>
     </div>
