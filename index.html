@@ -14,7 +14,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Bawaya Kenneth">
-<meta property="og:title" content="Bawaya Kenneth (Kenny) | Web Developer &amp; Software and Technology Specialist">
+<meta property="og:title" content="Bawaya Kenneth | Web Developer &amp; Software and Technology Specialist">
 <meta property="og:description" content="Official website of Bawaya Kenneth, a web developer and software and technology specialist from Uganda.">
 <meta property="og:url" content="https://bawatech1.github.io/bawayakenneth/">
 <meta property="og:image" content="https://bawatech1.github.io/bawayakenneth/assets/images/og-image.jpg">
@@ -36,11 +36,10 @@
       "@type": "Person",
       "@id": "https://bawatech1.github.io/bawayakenneth/#person",
       "name": "Bawaya Kenneth",
-      "alternateName": "Kenny",
       "givenName": "Kenneth",
       "familyName": "Bawaya",
       "jobTitle": "Web Developer | Software & Technology Specialist",
-      "description": "Bawaya Kenneth, known as Kenny, is a Ugandan web developer and technology enthusiast developing his skills in software, web technologies and practical digital solutions, with the ambition of becoming a software engineer.",
+      "description": "Bawaya Kenneth is a Ugandan aspiring software engineer, web developer and technology enthusiast, born and raised in Nangabo Village, Kasangati, Wakiso District. He is developing the technology brand BAWA TECHS.",
       "url": "https://bawatech1.github.io/bawayakenneth/",
       "image": "https://bawatech1.github.io/bawayakenneth/assets/images/kenny-portrait.jpg",
       "email": "mailto:bawayakenneth@gmail.com",
@@ -55,6 +54,11 @@
           "addressCountry": "UG"
         }
       },
+      "brand": { "@type": "Brand", "name": "BAWA TECHS" },
+      "alumniOf": { "@type": "EducationalOrganization", "name": "Cornerstone High School" },
+      "sameAs": [
+        "https://www.linkedin.com/in/bawaya-kenneth/"
+      ],
       "knowsAbout": [
         "Web development",
         "Website maintenance",
@@ -63,7 +67,10 @@
         "JavaScript",
         "Software installation",
         "Computer troubleshooting",
-        "Mobile device software support"
+        "Mobile device software support",
+        "Microsoft Office",
+        "Sales",
+        "Customer service"
       ],
       "mainEntityOfPage": "https://bawatech1.github.io/bawayakenneth/"
     },
@@ -72,7 +79,6 @@
       "@id": "https://bawatech1.github.io/bawayakenneth/#website",
       "url": "https://bawatech1.github.io/bawayakenneth/",
       "name": "Bawaya Kenneth",
-      "alternateName": "Kenny | Web Developer",
       "inLanguage": "en",
       "publisher": { "@id": "https://bawatech1.github.io/bawayakenneth/#person" }
     }
@@ -364,6 +370,20 @@ section{position:relative}
 .project-preview{grid-column:1 / -1;margin-top:clamp(1.5rem,4vw,3rem)}
 .project-preview img{width:100%;height:auto;border:1px solid rgba(233,232,223,.2)}
 .project-preview figcaption{margin-top:.8rem;font-size:.92rem;color:var(--muted-light)}
+
+.hero .roles{max-width:34rem;color:var(--muted-light);font-size:1.02rem;line-height:1.55}
+@media (prefers-reduced-motion:no-preference){.hero .roles{animation:fade .9s .6s both}}
+.about-photo img{object-position:50% 14%}
+@media (max-width:860px){.about-photo img{object-position:50% 20%}}
+.bio-h{font-family:var(--serif);font-weight:400;font-size:1.5rem;line-height:1.25;margin:2.25rem 0 .6rem;color:var(--text-dark)}
+.highlights{margin-top:3rem}
+.highlights ul{border-top:2px solid var(--ink)}
+.highlights li{display:grid;grid-template-columns:8rem 1fr;gap:1rem;padding:.8rem 0;border-bottom:1px solid rgba(22,32,26,.18)}
+.highlights .hy{font-family:var(--serif);color:var(--brass-deep);font-variant-numeric:oldstyle-nums}
+@media (max-width:860px){.highlights li{grid-template-columns:1fr;gap:0}}
+.project.project-brand{margin-top:clamp(1.25rem,3vw,2rem);padding:clamp(2.5rem,5vw,3.5rem) clamp(1.5rem,5vw,4.5rem)}
+.project.project-brand::before,.project.project-brand::after{display:none}
+.project.project-brand h3{font-size:clamp(2.3rem,6vw,4.75rem)}
 </style>
 </head>
 
@@ -398,6 +418,7 @@ section{position:relative}
     <div class="hero-copy">
       <h1 id="hero-title"><span class="l1">BAWAYA</span> <span class="l2">KENNETH</span></h1>
       <p class="role">Web Developer | Software &amp; Technology Specialist</p>
+      <p class="roles">Aspiring software engineer, web developer, technology enthusiast, digital creator and aspiring entrepreneur.</p>
       <p class="intro">Based in Wakiso District, Uganda, I am building my career in technology through website development, practical software support and hands-on digital projects. My long-term goal is to become a skilled software engineer, creating thoughtful, reliable solutions to real-world problems.</p>
       <div class="actions">
         <a class="btn btn-solid" href="https://wa.me/256748324741" target="_blank" rel="noopener">Message me on WhatsApp</a>
@@ -430,11 +451,11 @@ section{position:relative}
       <div class="ed-tabs" role="tablist" aria-label="Code files">
         <button class="ed-tab" role="tab" type="button" aria-selected="true" aria-controls="p-html" data-out="Preview: a page headed Bawaya Kenneth, with the project Muno Streams.">index.html</button>
         <button class="ed-tab" role="tab" type="button" aria-selected="false" aria-controls="p-css" data-out="Result: the heading is set in a brass colour taken from my photographs.">style.css</button>
-        <button class="ed-tab" role="tab" type="button" aria-selected="false" aria-controls="p-js" data-out="Output: Bawaya Kenneth (Kenny) builds websites in Uganda.">app.js</button>
+        <button class="ed-tab" role="tab" type="button" aria-selected="false" aria-controls="p-js" data-out="Output: Bawaya Kenneth builds websites in Uganda.">app.js</button>
       </div>
       <pre class="ed-panel active" id="p-html" role="tabpanel"><code><span class="cl"><span class="t-tag">&lt;header</span> <span class="t-attr">class</span>=<span class="t-str">"intro"</span><span class="t-tag">&gt;</span></span><span class="cl">  <span class="t-tag">&lt;h1&gt;</span>Bawaya Kenneth<span class="t-tag">&lt;/h1&gt;</span></span><span class="cl">  <span class="t-tag">&lt;p&gt;</span>Web Developer | Software &amp; Technology Specialist<span class="t-tag">&lt;/p&gt;</span></span><span class="cl"><span class="t-tag">&lt;/header&gt;</span></span><span class="cl"> </span><span class="cl"><span class="t-tag">&lt;section</span> <span class="t-attr">id</span>=<span class="t-str">"projects"</span><span class="t-tag">&gt;</span></span><span class="cl">  <span class="t-tag">&lt;h2&gt;</span>Muno Streams<span class="t-tag">&lt;/h2&gt;</span></span><span class="cl">  <span class="t-tag">&lt;p&gt;</span>Status: In development<span class="t-tag">&lt;/p&gt;</span></span><span class="cl"><span class="t-tag">&lt;/section&gt;</span></span></code></pre>
       <pre class="ed-panel" id="p-css" role="tabpanel"><code><span class="cl"><span class="t-com">/* Colours taken from my own photographs */</span></span><span class="cl"><span class="t-tag">:root</span> {</span><span class="cl">  <span class="t-attr">--ink</span>: <span class="t-str">#14201a</span>;</span><span class="cl">  <span class="t-attr">--brass</span>: <span class="t-str">#c2a15a</span>;</span><span class="cl">}</span><span class="cl"> </span><span class="cl"><span class="t-tag">.intro h1</span> {</span><span class="cl">  <span class="t-attr">font-family</span>: Georgia, serif;</span><span class="cl">  <span class="t-attr">color</span>: <span class="t-fn">var</span>(--brass);</span><span class="cl">}</span></code></pre>
-      <pre class="ed-panel" id="p-js" role="tabpanel"><code><span class="cl"><span class="t-key">const</span> developer = {</span><span class="cl">  name: <span class="t-str">"Bawaya Kenneth"</span>,</span><span class="cl">  alias: <span class="t-str">"Kenny"</span>,</span><span class="cl">  country: <span class="t-str">"Uganda"</span>,</span><span class="cl">  building: <span class="t-str">"Muno Streams"</span></span><span class="cl">};</span><span class="cl"> </span><span class="cl"><span class="t-key">function</span> <span class="t-fn">introduce</span>(person) {</span><span class="cl">  <span class="t-key">return</span> <span class="t-str">`${person.name} (${person.alias}) builds websites in ${person.country}.`</span>;</span><span class="cl">}</span><span class="cl"> </span><span class="cl"><span class="t-fn">console</span>.log(<span class="t-fn">introduce</span>(developer));</span></code></pre>
+      <pre class="ed-panel" id="p-js" role="tabpanel"><code><span class="cl"><span class="t-key">const</span> developer = {</span><span class="cl">  name: <span class="t-str">"Bawaya Kenneth"</span>,</span><span class="cl">  brand: <span class="t-str">"BAWA TECHS"</span>,</span><span class="cl">  country: <span class="t-str">"Uganda"</span>,</span><span class="cl">  building: <span class="t-str">"Muno Streams"</span></span><span class="cl">};</span><span class="cl"> </span><span class="cl"><span class="t-key">function</span> <span class="t-fn">introduce</span>(person) {</span><span class="cl">  <span class="t-key">return</span> <span class="t-str">`${person.name} builds websites in ${person.country}.`</span>;</span><span class="cl">}</span><span class="cl"> </span><span class="cl"><span class="t-fn">console</span>.log(<span class="t-fn">introduce</span>(developer));</span></code></pre>
       <div class="ed-out" id="edOut"></div>
     </div>
   </div>
@@ -443,31 +464,55 @@ section{position:relative}
   <section class="sec light" id="about" aria-labelledby="about-title">
     <div class="wrap about-grid">
       <figure class="about-photo">
-        <div class="mat"><img src="assets/images/kenny-workspace.webp" width="800" height="1422" loading="lazy"
-             alt="Bawaya Kenneth in a black shirt seated on a leather sofa, with a laptop showing a spreadsheet open beside him."></div>
-        <figcaption class="muted"></figcaption>
+        <div class="mat"><img src="assets/images/kenny-portrait-640.jpg"
+             srcset="assets/images/kenny-portrait-640.jpg 640w, assets/images/kenny-portrait.jpg 1023w"
+             sizes="(max-width: 860px) 100vw, 40vw"
+             width="1023" height="1537" loading="lazy"
+             alt="Bawaya Kenneth standing with his arms crossed in front of green foliage and purple flowers, in warm evening light."></div>
+        <figcaption class="muted">Bawaya Kenneth</figcaption>
       </figure>
       <div class="about-text">
         <h2 class="h2" id="about-title">About Me</h2>
-        <p class="lede">My name is Bawaya Kenneth, though I am widely known as Kenny. I am an aspiring software engineer and an emerging technology professional, building my career through practical work in web development, software support and the continued study of digital technologies.</p>
-        <p>I was born on 6 June 2005 to my mother, Nakafu Immaculate, and my father, Balikoowa Patrick. I was born and raised in Nangabo Village, within Kasangati Town Council, Wakiso District, Uganda. Nangabo is more than a place on my biography; it is the starting point of my story and an important part of the identity I carry as I pursue my ambitions.</p>
+        <p class="lede">My name is Bawaya Kenneth. I am an aspiring software engineer, web developer, technology enthusiast, digital creator and aspiring entrepreneur, born and raised in Nangabo Village, Kasangati, Wakiso District, Uganda.</p>
+
+        <h3 class="bio-h">Early life</h3>
+        <p>I was born and raised in Nangabo Village, Kasangati, Wakiso District, Uganda. Nangabo is more than a place in my biography; it is the starting point of my story and an important part of the identity I carry as I pursue my ambitions.</p>
+
+        <h3 class="bio-h">Education</h3>
+        <p>I attended Cornerstone High School from 2019 to 2025 and completed the Uganda Advanced Certificate of Education (UACE) there in 2025.</p>
+
+        <h3 class="bio-h">Entry into technology</h3>
         <p>My relationship with technology began with curiosity. In 2015, I took my first steps with computers, beginning a journey that would gradually develop into a deeper interest in how technology works and what it makes possible. In 2023, I began exploring software and the web more deliberately, turning that early curiosity towards learning, experimentation and practical creation.</p>
-        <p>Today, I am building a broad and increasingly focused foundation in technology. My work and learning include creating and maintaining websites, working with HTML, CSS and JavaScript, installing and configuring software, troubleshooting computer issues and providing software-related support for mobile devices. I also work with Microsoft Office applications and continue to strengthen the technical understanding, problem-solving ability and disciplined approach that meaningful software development demands.</p>
+
+        <h3 class="bio-h">Current work</h3>
+        <p>Today, I am building a broad and increasingly focused foundation in technology. My work and learning include creating and maintaining websites, working with HTML, CSS and JavaScript, installing and configuring software, troubleshooting computer issues and providing software-related support for mobile devices. I also work with Microsoft Office applications and continue to strengthen the technical understanding, problem-solving ability and disciplined approach that meaningful software development demands. I also have skills in sales and customer service.</p>
         <p>I believe progress in technology comes from more than simply learning tools; it comes from understanding problems, thinking carefully, testing ideas and being willing to improve a solution until it serves its purpose. That mindset guides the way I approach each task, whether I am resolving a technical issue, refining a website or learning a new concept.</p>
-        <p>One expression of that commitment is Muno Streams, my movie-streaming website project, which is currently in development. It is a practical environment in which I can apply my knowledge, confront real development challenges and gain experience in shaping a digital product from an idea into a working platform.</p>
+        <p>One expression of that commitment is Muno Streams, my digital streaming platform, which is currently under development. It is a practical environment in which I can apply my knowledge, confront real development challenges and gain experience in shaping a digital product from an idea into a working platform. I am also developing BAWA TECHS, my technology brand focused on website development, website maintenance and digital services.</p>
+
+        <h3 class="bio-h">Vision and ambitions</h3>
         <blockquote class="pull">I do not regard expertise as a title to claim prematurely, but as a standard to earn through consistent study, deliberate practice, sound judgement and years of meaningful work.</blockquote>
-        <p>My professional journey is still taking shape, and I am ambitious about where it can lead. My long-term goal is to become a highly skilled software engineer, capable of designing, building and maintaining reliable software that addresses real needs. I do not regard expertise as a title to claim prematurely, but as a standard to earn through consistent study, deliberate practice, sound judgement and years of meaningful work. I am committed to that process, with the determination to keep learning, keep building and make each stage of my development count.</p>
-        <dl class="facts">
-          <div><dt>Full name</dt><dd>Bawaya Kenneth</dd></div>
-          <div><dt>Preferred name</dt><dd>Kenny</dd></div>
-          <div><dt>Date of birth</dt><dd>6 June 2005</dd></div>
-          <div><dt>Mother</dt><dd>Nakafu Immaculate</dd></div>
-          <div><dt>Father</dt><dd>Balikoowa Patrick</dd></div>
-          <div><dt>Born and raised</dt><dd>Nangabo Village</dd></div>
-          <div><dt>Town Council</dt><dd>Kasangati Town Council</dd></div>
-          <div><dt>District</dt><dd>Wakiso District</dd></div>
-          <div><dt>Country</dt><dd>Uganda</dd></div>
+        <p>My long-term goal is to become a skilled software engineer, designing, building and maintaining reliable software that addresses real needs. I also aspire to be an entrepreneur, building digital products and services through BAWA TECHS. My professional journey is still taking shape, and I am ambitious about where it can lead. I am committed to that process, with the determination to keep learning, keep building and make each stage of my development count.</p>
+
+        <h3 class="bio-h">At a glance</h3>
+        <dl class="facts" style="margin-top:.5rem">
+          <div><dt>Name</dt><dd>Bawaya Kenneth</dd></div>
+          <div><dt>Roles</dt><dd>Aspiring software engineer, web developer, technology enthusiast, digital creator, aspiring entrepreneur</dd></div>
+          <div><dt>Born and raised</dt><dd>Nangabo Village, Kasangati, Wakiso District, Uganda</dd></div>
+          <div><dt>Education</dt><dd>UACE, Cornerstone High School (2025)</dd></div>
+          <div><dt>Initiatives</dt><dd>BAWA TECHS (developing brand); Muno Streams (platform in development)</dd></div>
+          <div><dt>Links</dt><dd><a href="https://bawatech1.github.io/bawayakenneth/">Official website</a>, <a href="https://www.linkedin.com/in/bawaya-kenneth/" target="_blank" rel="noopener me">LinkedIn</a></dd></div>
         </dl>
+
+        <div class="highlights">
+          <h3 class="bio-h" style="margin-top:0">Highlights</h3>
+          <ul>
+            <li><span class="hy">2015</span><span>First introduced to computers</span></li>
+            <li><span class="hy">2019–2025</span><span>Studied at Cornerstone High School</span></li>
+            <li><span class="hy">2023</span><span>Began exploring software and the web more deliberately</span></li>
+            <li><span class="hy">2025</span><span>Completed the Uganda Advanced Certificate of Education (UACE)</span></li>
+            <li><span class="hy">Now</span><span>Building Muno Streams, a digital streaming platform under development, and developing the BAWA TECHS brand</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -481,9 +526,9 @@ section{position:relative}
       </div>
       <ol class="timeline" style="list-style:none;margin-top:0;margin-bottom:0;padding:0">
         <li class="tl-item">
-          <p class="tl-when">6 June 2005</p>
+          <p class="tl-when">Beginnings</p>
           <h3>Born in Nangabo Village</h3>
-          <p>Born to Nakafu Immaculate and Balikoowa Patrick in Nangabo Village, Kasangati Town Council, Wakiso District, Uganda.</p>
+          <p>Born and raised in Nangabo Village, Kasangati, Wakiso District, Uganda.</p>
         </li>
         <li class="tl-item">
           <p class="tl-when">Growing up</p>
@@ -506,9 +551,14 @@ section{position:relative}
           <p>In 2023, I began taking a more deliberate interest in software and web technologies. I started developing my understanding through hands-on exploration, learning and practical experimentation.</p>
         </li>
         <li class="tl-item">
+          <p class="tl-when">2025</p>
+          <h3>Completed UACE</h3>
+          <p>I completed the Uganda Advanced Certificate of Education (UACE) at Cornerstone High School.</p>
+        </li>
+        <li class="tl-item">
           <p class="tl-when">Now</p>
           <h3>Building a future in software engineering</h3>
-          <p>Developing practical skills through website projects, software support and continued learning, with the long-term goal of becoming a skilled software engineer. Muno Streams is one of the projects through which I am putting that learning into practice.</p>
+          <p>Developing practical skills through website projects, software support and continued learning, with the long-term goal of becoming a skilled software engineer. Muno Streams is one of the projects through which I am putting that learning into practice, and BAWA TECHS is the technology brand I am developing alongside it.</p>
         </li>
       </ol>
     </div>
@@ -590,6 +640,13 @@ section{position:relative}
             <li>Computer troubleshooting</li>
           </ul>
         </div>
+        <div class="skill-group">
+          <h3>Business skills</h3>
+          <ul>
+            <li>Sales</li>
+            <li>Customer service</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -608,13 +665,23 @@ section{position:relative}
           <span class="status"><i aria-hidden="true"></i>Status: In development</span>
         </div>
         <div class="project-body">
-          <p class="lede">A digital entertainment platform taking shape as a movie-streaming website.</p>
+          <p class="lede">A digital streaming platform currently under development.</p>
           <p>Muno Streams is an active development project and an important part of my learning journey. I am using it to put web-development concepts into practice, work through the challenges of building a larger digital product and steadily improve my technical skills. The platform is still under development and is not yet a finished public product.</p>
         </div>
         <figure class="project-preview">
   <img src="assets/images/muno-streams-preview.webp" width="1686" height="1170" loading="lazy" alt="Preview of the Muno Streams home screen, showing the navigation bar, genre filters, a search box and a featured movie banner.">
   <figcaption>Preview of the Muno Streams home screen. The platform is still in development.</figcaption>
 </figure>
+      </article>
+      <article class="project project-brand">
+        <div>
+          <h3>BAWA TECHS</h3>
+          <span class="status"><i aria-hidden="true"></i>Status: In development</span>
+        </div>
+        <div class="project-body">
+          <p class="lede">My developing technology brand focused on website development, website maintenance and digital services.</p>
+          <p>BAWA TECHS is the brand under which I am developing my web and technology services. It is at an early stage and is not an established company.</p>
+        </div>
       </article>
       <p class="more-note">More projects will be added here as they are completed.</p>
     </div>
@@ -672,7 +739,7 @@ section{position:relative}
     <div class="footer-inner">
       <div>
         <p class="footer-name">Bawaya Kenneth</p>
-        <p>Kenny. Web Developer | Software &amp; Technology Specialist. Uganda.</p>
+        <p>Web Developer | Software &amp; Technology Specialist. Uganda.</p>
       </div>
       <nav aria-label="Footer navigation">
         <ul class="footer-links">
@@ -683,6 +750,7 @@ section{position:relative}
           <li><a href="#projects">Projects</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/bawaya-kenneth/" target="_blank" rel="noopener me">LinkedIn</a></li>
         </ul>
       </nav>
       <div class="footer-base">
